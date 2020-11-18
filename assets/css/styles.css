@@ -1,0 +1,392 @@
+/* Pagina 'Servicios' -------- inicio */
+.pricing-area {
+  padding: 80px 0; }
+
+.single-price {
+  padding-bottom: 25px;
+  background: #ffffff;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7); }
+
+.single-price a {
+  background: darkorchid;
+  color: #ffffff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 25px;
+  display: inline-block; }
+
+.single-price:hover {
+  cursor: pointer;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.1);
+  transform: scale(1.04); }
+
+.single-price::before {
+  content: "";
+  width: 100%;
+  height: 350px;
+  background: darkorchid;
+  position: absolute;
+  top: -150px;
+  left: 0;
+  transform: skewY(-20deg); }
+
+.single-price .price-header {
+  padding: 20px 20px 60px;
+  text-align: left;
+  position: relative; }
+
+.single-price .title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0; }
+
+.single-price .price-value {
+  display: inline-block;
+  width: 170px;
+  height: 110px;
+  padding: 15px;
+  border-top: none;
+  border-bottom: none;
+  position: relative; }
+
+.single-price .value {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border: 5px solid #262626;
+  border-top: none;
+  border-bottom: none;
+  z-index: 1;
+  position: relative; }
+
+.single-price .value::before, .single-price .value::after {
+  content: "";
+  width: 97px;
+  height: 97px;
+  background: #ffffff;
+  border: 5px solid #262626;
+  border-bottom: none;
+  border-right: none;
+  position: absolute;
+  top: -48px;
+  left: 50%;
+  z-index: -1;
+  transform: translateX(-50%) scaleY(0.5) rotate(45deg); }
+
+.single-price .value::after {
+  border-right: 5px solid #262626;
+  border-bottom: 5px solid #262626;
+  border-top: none;
+  border-left: none;
+  top: auto;
+  bottom: -48px; }
+
+.single-price .currency {
+  display: inline-block;
+  font-size: 15px;
+  margin-top: 7px;
+  vertical-align: top; }
+
+.single-price .amount {
+  display: inline-block;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 65px; }
+
+.single-price .amount span {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: normal;
+  vertical-align: top;
+  margin-top: -7px; }
+
+.single-price .month {
+  display: block;
+  font-size: 16px;
+  line-height: 0; }
+
+.single-price .deals {
+  padding: 70px 0 0 0;
+  margin-bottom: 20px;
+  list-style: none;
+  text-align: center;
+  transition: all 0.3s ease 0s; }
+
+.single-price .deals li {
+  padding: 7px 0;
+  font-size: 16px;
+  color: #808080;
+  position: relative; }
+
+@media only screen and (max-width: 990px) {
+  .single-price {
+    margin-bottom: 30px; } }
+
+@media only screen and (max-width: 767px) {
+  .single-price:before {
+    transform: skewY(-15deg); }
+  .single-price .title {
+    font-size: 22px; } }
+
+/* Pagina 'Servicios' -------- fin */
+body {
+  font-family: 'Poiret One', 'Rajdhani';
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/bodybackground3.jpg); }
+
+.banner__background {
+  background: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.seccion__titulo--sombreado {
+  color: darkorchid;
+  text-shadow: 0 5px 20px rgba(0, 0, 0, 0.7); }
+
+.texto--sombreado {
+  text-shadow: 0 0 10px darkorchid; }
+
+.bordeSombreado {
+  box-shadow: 0 0 10px darkorchid;
+  border-radius: 5px; }
+
+/* textarea del formulario responsive */
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%; }
+
+/* Banner del index */
+.jumbotron {
+  width: 100%;
+  height: 79vh;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  padding-top: 15%; }
+
+/* pagina 'Secciones' ---------- inicio */
+.secciones .seccion__link--decorationNone {
+  text-decoration: none; }
+
+#seccion span {
+  position: relative;
+  bottom: 70px;
+  left: 20px;
+  font-size: 2.2em;
+  color: #ffffff;
+  text-shadow: 0 0 10px darkorchid;
+  transition: 0.9s; }
+
+#seccion img {
+  transition: 0.9s;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7); }
+
+#seccion img:hover, #seccion img:hover ~ span {
+  opacity: .5; }
+
+/* pagina 'Secciones' ---------- fin */
+.background--darkorchid {
+  background: darkorchid; }
+
+/* Animacion para el nombre y logo de la empresa ---------- INICIO */
+.text-flicker-in-glow {
+  -webkit-animation: text-flicker-in-glow 4s linear both;
+  animation: text-flicker-in-glow 4s linear both; }
+
+@-webkit-keyframes text-flicker-in-glow {
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 0;
+    text-shadow: none; }
+  10.1% {
+    opacity: 1;
+    text-shadow: none; }
+  10.2% {
+    opacity: 0;
+    text-shadow: none; }
+  20% {
+    opacity: 0;
+    text-shadow: none; }
+  20.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.25); }
+  20.6% {
+    opacity: 0;
+    text-shadow: none; }
+  30% {
+    opacity: 0;
+    text-shadow: none; }
+  30.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25); }
+  30.5% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25); }
+  30.6% {
+    opacity: 0;
+    text-shadow: none; }
+  45% {
+    opacity: 0;
+    text-shadow: none; }
+  45.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25); }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25); }
+  55% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25); }
+  55.1% {
+    opacity: 0;
+    text-shadow: none; }
+  57% {
+    opacity: 0;
+    text-shadow: none; }
+  57.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35); }
+  60% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35); }
+  60.1% {
+    opacity: 0;
+    text-shadow: none; }
+  65% {
+    opacity: 0;
+    text-shadow: none; }
+  65.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1); }
+  75% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1); }
+  75.1% {
+    opacity: 0;
+    text-shadow: none; }
+  77% {
+    opacity: 0;
+    text-shadow: none; }
+  77.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1); }
+  85% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1); }
+  85.1% {
+    opacity: 0;
+    text-shadow: none; }
+  86% {
+    opacity: 0;
+    text-shadow: none; }
+  86.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1); }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1); } }
+
+@keyframes text-flicker-in-glow {
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 0;
+    text-shadow: none; }
+  10.1% {
+    opacity: 1;
+    text-shadow: none; }
+  10.2% {
+    opacity: 0;
+    text-shadow: none; }
+  20% {
+    opacity: 0;
+    text-shadow: none; }
+  20.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.25); }
+  20.6% {
+    opacity: 0;
+    text-shadow: none; }
+  30% {
+    opacity: 0;
+    text-shadow: none; }
+  30.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25); }
+  30.5% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25); }
+  30.6% {
+    opacity: 0;
+    text-shadow: none; }
+  45% {
+    opacity: 0;
+    text-shadow: none; }
+  45.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25); }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25); }
+  55% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25); }
+  55.1% {
+    opacity: 0;
+    text-shadow: none; }
+  57% {
+    opacity: 0;
+    text-shadow: none; }
+  57.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35); }
+  60% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35); }
+  60.1% {
+    opacity: 0;
+    text-shadow: none; }
+  65% {
+    opacity: 0;
+    text-shadow: none; }
+  65.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1); }
+  75% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1); }
+  75.1% {
+    opacity: 0;
+    text-shadow: none; }
+  77% {
+    opacity: 0;
+    text-shadow: none; }
+  77.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1); }
+  85% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1); }
+  85.1% {
+    opacity: 0;
+    text-shadow: none; }
+  86% {
+    opacity: 0;
+    text-shadow: none; }
+  86.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1); }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1); } }
+
+/* Animacion para el nombre y logo de la empresa ---------- FIN */

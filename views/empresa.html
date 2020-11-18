@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://kit.fontawesome.com/07c198be6a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark background--darkorchid" id="menu-navegacion">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="far fa-lightbulb fa-2x text-flicker-in-glow"></i>
+                <span class="ml-2 text-flicker-in-glow">IT Works!</span>
+            </a>
+
+            <!--Boton de menu comprimido para resoluciones menores-->
+            <button class="navbar-toggler" type="button"
+                data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="empresa.html" class="nav-link active">Empresa</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="secciones.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Secciones
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="secciones.html">Totas las Secciones</a>
+                            <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="secciones.html">eCommerce</a>
+                          <a class="dropdown-item" href="secciones.html">Diseño</a>
+                          <a class="dropdown-item" href="secciones.html">Educacion</a>
+                          <a class="dropdown-item" href="secciones.html">Venta en local</a>
+                          <a class="dropdown-item" href="secciones.html">Marketing</a>
+                          <a class="dropdown-item" href="secciones.html">Salud</a>
+                          <a class="dropdown-item" href="secciones.html">Servicios</a>
+                          <a class="dropdown-item" href="secciones.html">Software</a>
+                          <a class="dropdown-item" href="secciones.html">Gestorias</a>
+                        </div>
+                      </li>
+                    <li class="nav-item">
+                        <a href="servicios.html" class="nav-link">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="testimonios.html" class="nav-link">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 mt-5">
+                  <h2 class="seccion__titulo--sombreado">
+                      Quienes Somos
+                  </h2>
+                  <p class="mt-5">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, velit, eaque soluta illum earum autem amet ipsam necessitatibus tenetur doloremque quia quibusdam adipisci similique nesciunt architecto reprehenderit ullam suscipit. A culpa adipisci ad cupiditate magnam aut consequuntur deserunt eaque officiis!
+
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, tempore? Quaerat, consequatur inventore. Libero quisquam quis sit dolor aperiam. Corporis necessitatibus deleniti dicta fugiat iusto, id, nam reprehenderit natus odio non magnam. Similique itaque at quae tempore dignissimos nam doloremque quod pariatur, explicabo illum, perspiciatis facere eum! Laudantium voluptatibus dignissimos, ducimus dolores ex cum! Aut sapiente eos illum adipisci fugit neque perspiciatis consequatur velit quia, ullam maiores necessitatibus repudiandae, nihil rerum sit laboriosam amet earum ex ipsa. Mollitia dolorum unde eos soluta impedit cum eum fuga! Sit corrupti facere fugiat, totam laboriosam eveniet sunt. Obcaecati alias quae deserunt voluptas. Unde?
+                  </p>
+                  <button class="btn btn-outline-primary btn-lg text-center my-5">
+                      Mas Informacion
+                  </button>
+                </div>
+                <div class="col-sm-12 col-md-6 my-5 carousel slide" id="carouselExampleInterval" data-ride="carousel">
+                    <!-- <img class="img-thumbnail img-fluid" width="70%" src="../assets/img/ideas.jpg" alt=""> -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="../assets/img/empresa3.jpg" class="img-thumbnail img-fluid w-100">
+                        </div>
+                        <div class="carousel-item" data-interval="5000">
+                          <img src="../assets/img/empresa1.jpg" class="img-thumbnail img-fluid w-100">
+                        </div>
+                        <div class="carousel-item" data-interval="5000">
+                          <img src="../assets/img/empresa2.jpg" class="img-thumbnail img-fluid w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="background--darkorchid text-white p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex justify-content-center align-items-center">
+                    <p class="lead text-center">
+                        2020 - IT Works! &copy;
+                        <span>Todos los derechos</span>
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="d-flex justify-content-center">Seguinos!</h3>
+                    <div class="d-flex justify-content-center">
+                        <div class="mx-3">
+                            <a href="#"><i class="fab fa-facebook text-white"></i></a>
+                        </div>
+                        <div class="mx-3">
+                            <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                        </div>
+                        <div class="mx-3">
+                            <a href="#"><i class="fab fa-twitter text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

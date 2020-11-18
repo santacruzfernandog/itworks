@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://kit.fontawesome.com/07c198be6a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark background--darkorchid" id="menu-navegacion">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="far fa-lightbulb fa-2x text-flicker-in-glow"></i>
+                <span class="ml-2 text-flicker-in-glow">IT Works!</span>
+            </a>
+
+            <!--Boton de menu comprimido para resoluciones menores-->
+            <button class="navbar-toggler" type="button"
+                data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="empresa.html" class="nav-link">Empresa</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="secciones.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Secciones
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="secciones.html">Totas las Secciones</a>
+                            <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="secciones.html">eCommerce</a>
+                          <a class="dropdown-item" href="secciones.html">Diseño</a>
+                          <a class="dropdown-item" href="secciones.html">Educacion</a>
+                          <a class="dropdown-item" href="secciones.html">Venta en local</a>
+                          <a class="dropdown-item" href="secciones.html">Marketing</a>
+                          <a class="dropdown-item" href="secciones.html">Salud</a>
+                          <a class="dropdown-item" href="secciones.html">Servicios</a>
+                          <a class="dropdown-item" href="secciones.html">Software</a>
+                          <a class="dropdown-item" href="secciones.html">Gestorias</a>
+                        </div>
+                      </li>
+                    <li class="nav-item">
+                        <a href="servicios.html" class="nav-link">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="testimonios.html" class="nav-link">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link active">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="my-5">
+        <h1 class="text-center seccion__titulo--sombreado mb-5">Contactanos</h1><!-- 
+        <p class="lead text-center mb-5">Por favor, completa el siguiente formulario, y un asesor se comunicara con vos en breve!</p>   -->  
+    
+        <div class="container">
+            <form class="bordeSombreado p-5">
+                <div class="form-row">
+                    <div class="form-group col-md-6 seccion__titulo--sombreado">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                    </div>
+                    <div class="form-group col-md-6 seccion__titulo--sombreado">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6 seccion__titulo--sombreado">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+                    </div>
+                    <div class="form-group col-md-6 seccion__titulo--sombreado">
+                        <label for="telefono">Telefono (Opcional)</label>
+                        <input type="number" class="form-control" id="telefono" placeholder="011 2222 3333">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6 seccion__titulo--sombreado">
+                        <label for="consulta">Que area deseas consultar?</label>
+                        <select id="consulta" class="form-control">
+                            <option selected>Seleccionar</option>
+                            <option>eCommerce</option>
+                            <option>Educacion</option>
+                            <option>Servicios</option>
+                            <option>Venta en Local</option>
+                            <option>Gestorias</option>
+                            <option>Diseño</option>
+                            <option>Marketing</option>
+                            <option>Salud</option>
+                            <option>Software</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6 seccion__titulo--sombreado">
+                        <label for="novedades">Desea recibir noticias y ofertas semanales?</label>
+                        <input type="checkbox" id="novedades">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6 seccion__titulo--sombreado">
+                        <label for="mensaje">Mensaje</label><br>
+                        <textarea id="mensaje" placeholder="Escribir..."></textarea>
+                    </div>
+                </div>
+                <!-- Boton LIMPIAR con Modal -->
+                <button type="reset" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenterLimpiar">
+                    Limpiar
+                </button>
+                <!-- Boton ENVIAR con Modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenterEnviar">
+                    Enviar
+                </button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="background--darkorchid text-white p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex justify-content-center align-items-center">
+                    <p class="lead text-center">
+                        2020 - IT Works! &copy;
+                        <span>Todos los derechos</span>
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="d-flex justify-content-center">Seguinos!</h3>
+                    <div class="d-flex justify-content-center">
+                        <div class="mx-3">
+                            <a href="#"><i class="fab fa-facebook text-white"></i></a>
+                        </div>
+                        <div class="mx-3">
+                            <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                        </div>
+                        <div class="mx-3">
+                            <a href="#"><i class="fab fa-twitter text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Modal boton ENVIAR -->
+    <div class="modal fade" id="exampleModalCenterEnviar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Confirmar envio de formulario</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                Al confirmar el envio de tus datos personales te llegara un mail, no te olvides de revisar el Spam.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal boton LIMPIAR -->
+    <div class="modal fade" id="exampleModalCenterLimpiar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Limpiar formulario</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                Se eliminaran todos los datos ingresados, seguro que desea borrarlos?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Limpiar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
