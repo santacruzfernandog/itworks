@@ -19,7 +19,7 @@
     <title>IT Works!</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark background--darkorchid" id="menu-navegacion">
+    <nav class="navbar navbar-expand-lg navbar-dark background--darkorchid fixed-top" id="menu-navegacion">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <i class="far fa-lightbulb fa-2x text-flicker-in-glow"></i>
@@ -37,37 +37,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link active">Inicio</a>
+                        <a href="#inicio" class="nav-link redes-size active">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="views/empresa.html" class="nav-link">Empresa</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="views/secciones.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Secciones
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="views/secciones.html">Totas las Secciones</a>
-                            <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="views/secciones.html">eCommerce</a>
-                          <a class="dropdown-item" href="views/secciones.html">Diseño</a>
-                          <a class="dropdown-item" href="views/secciones.html">Educacion</a>
-                          <a class="dropdown-item" href="views/secciones.html">Venta en local</a>
-                          <a class="dropdown-item" href="views/secciones.html">Marketing</a>
-                          <a class="dropdown-item" href="views/secciones.html">Salud</a>
-                          <a class="dropdown-item" href="views/secciones.html">Servicios</a>
-                          <a class="dropdown-item" href="views/secciones.html">Software</a>
-                          <a class="dropdown-item" href="views/secciones.html">Gestorias</a>
-                        </div>
-                      </li>
-                    <li class="nav-item">
-                        <a href="views/servicios.html" class="nav-link">Servicios</a>
+                        <a href="#intro" class="nav-link redes-size">Empresa</a>
                     </li>
                     <li class="nav-item">
-                        <a href="views/testimonios.html" class="nav-link">Testimonios</a>
+                        <a href="#servicios" class="nav-link redes-size">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a href="views/contacto.html" class="nav-link">Contacto</a>
+                        <a href="#secciones" class="nav-link redes-size">Secciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#testimonios" class="nav-link redes-size">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacto" class="nav-link redes-size">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -78,7 +63,7 @@
 
 
     <section id="inicio" class="text-center text-white banner__background">
-        <div class="jumbotron my-0">
+        <div class="jumbotron">
             <h1 class="display-3 texto--sombreado">IT Works!</h1>
             <h3 class="texto--sombreado">~ Si lo podes imaginar, lo podes crear ~</h3>
         </div>
@@ -86,27 +71,368 @@
 
 
 
+    
+    <section id="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 mt-5">
+                  <h2 class="seccion__titulo--sombreado margin-intro">
+                      Nosotros
+                  </h2>
+                  <p class="text-justify text-blue font-weight-bold my-5">
+                      En ITWorks creemos que toda buena idea merece una oportunidad. Somos testigos de que los sueños pueden cumplirse, por eso nos sentimos comprometidos con tus propositos. Lo unico que necesitamos es tu espiritu emprendedor. El resto dejanoslo a nosotros.
+                      <br><br>
+                      Somos una empresa que se dedica a darle una mano a emprendedores iniciales. Sabemos lo dificil que es hoy en dia ser original, cubrir una necesidad especifica en la sociedad, y mas aun entrar en ritmo de competencia.
+                      <br><br>
+                      Son muchas las personas que poseen un gran talento, y que por no contar con los medios, la informacion o la ayuda necesarias, no terminan siendo conocidos y no pueden compartir lo que saben.
+                      <br><br>
+                      Nuestro Staff cuenta con los asesores mas especializados en cada area para que garantizar tu tranquilidad. Solo animate, y del papeleo nos ocupamos nosotros.
+                  </p>
+                  <button class="btn btn-outline-primary btn-sm text-center mb-5">
+                      Mas Informacion
+                  </button>
+                </div>
+                <div class="col-sm-12 col-md-6 my-5 carousel slide" id="carouselExampleInterval" data-ride="carousel">
+                    <div class="carousel-inner margin-intro">
+                        <div class="carousel-item active">
+                          <img src="assets/img/empresa3.jpg" class="img-thumbnail img-fluid w-100">
+                        </div>
+                        <div class="carousel-item" data-interval="5000">
+                          <img src="assets/img/empresa1.jpg" class="img-thumbnail img-fluid w-100">
+                        </div>
+                        <div class="carousel-item" data-interval="5000">
+                          <img src="assets/img/empresa2.jpg" class="img-thumbnail img-fluid w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div class="container">
+        <div class="row my-5">
+            <div id="seccionRecomendanos" class="col-sm-6 d-flex justify-content-end">
+                <div class="recomendacion-size text-center font-weight-bold seccion__titulo--sombreado">
+                    <span>Recomendanos</span>
+                </div>
+            </div>
+            <div id="seccionRecomendanos" class="col-sm-6 d-flex justify-content-start">
+                <div id="redes" class="text-center recomendacion-size">
+                    <a href="" class="mx-3"><i class="fab fa-facebook text-dark"></a></i>
+                    <a href="" class="mx-3"><i class="fab fa-twitter text-dark"></i></a>
+                    <a href="" class="mx-3"><i class="fab fa-instagram text-dark"></i></a>
+                    <a href="" class="mx-3"><i class="fab fa-linkedin text-dark"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <section class="my-5">
+        <h2 id="servicios" class="text-center seccion__titulo--sombreado">Nuestros Servicios</h2>
+
+        <div class="pricing-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-price">
+                            <div class="price-header">
+                                <h3 class="title">Emprendedor</h3>
+                            </div>
+                            <div class="price-value">
+                                <div class="value">
+                                    <span class="currency">U$S</span> <span class="amount">75<span>.-</span></span> <span class="month">/mes</span>
+                                </div>
+                            </div>
+                            <ul class="deals">
+                                <li>Asesorias</li>
+                                <li>Seguimiento personalizado</li>
+                                <li>Prestamos a tasa baja</li>
+                                <li>Proveedores</li>
+                                <li>Tramites</li>
+                            </ul><a href="#">Contratar</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-price">
+                            <div class="price-header">
+                                <h3 class="title">Profesional</h3>
+                            </div>
+                            <div class="price-value">
+                                <div class="value">
+                                    <span class="currency">U$S</span> <span class="amount">150<span>.-</span></span> <span class="month">/mes</span>
+                                </div>
+                            </div>
+                            <ul class="deals">
+                                <li><strong>Plan Emprendedor +</strong></li>
+                                <li>Marketing</li>
+                                <li>Tienda Online</li>
+                                <li>Abogados y terminos legales</li>
+                                <li>Contabilidad y balances</li>
+                            </ul><a href="#">Contratar</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-price">
+                            <div class="price-header">
+                                <h3 class="title">Corporativo</h3>
+                            </div>
+                            <div class="price-value">
+                                <div class="value">
+                                    <span class="currency">U$S</span> <span class="amount">300<span>.-</span></span> <span class="month">/mes</span>
+                                </div>
+                            </div>
+                            <ul class="deals">
+                                <li><strong>Plan Profesional +</strong></li>
+                                <li>CMR</li>
+                                <li>Acciones e Inversores</li>
+                                <li>Seguros</li>
+                                <li>Registros de Marcas</li>
+                            </ul><a href="#">Contratar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+    <h2 id="secciones" class="text-center my-5 seccion__titulo--sombreado">En que area queres emprender?</h2>
+    <div id="seccion" class="container my-5 secciones d-flex">
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <a href="#" class="seccion__link--decorationNone"><img class="rounded" src="assets/img/ecommerce.jpg" width="100%" alt=""><span id="nombreSeccion">eCommerce</span></a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <a href="#" class="seccion__link--decorationNone"><img class="rounded" src="assets/img/design.jpg" width="100%" alt=""><span>Diseño</span></a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <a href="#" class="seccion__link--decorationNone"><img class="rounded" src="assets/img/educacion.jpg" width="100%" alt=""><span>Educacion</span></a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <a href="#" class="seccion__link--decorationNone"><img class="rounded" src="assets/img/local.jpg" width="100%" alt=""><span>Venta Local</span></a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <a href="#" class="seccion__link--decorationNone"><img class="rounded" src="assets/img/marketing.jpg" width="100%" alt=""><span>Marketing</span></a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <a href="#" class="seccion__link--decorationNone"><img class="rounded" src="assets/img/salud.jpg" width="100%" alt=""><span>Salud</span></a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <a href="#" class="seccion__link--decorationNone"><img class="rounded" src="assets/img/servicio.jpg" width="100%" alt=""><span>Servicio</span></a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <a href="#" class="seccion__link--decorationNone"><img class="rounded" src="assets/img/software.jpg" width="100%" alt=""><span class="">Software</span></a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <a href="#" class="seccion__link--decorationNone"><img class="rounded" src="assets/img/asesorias.jpg" width="100%" alt=""><span>Gestorias</span></a>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <section id="testimonios">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="text-center mt-5 seccion__titulo--sombreado my-5">Testimonios</h2>
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-5 d-none d-md-flex justify-content-end">
+                                        <img src="assets/img/persona1.jpg" class="img-thumbnail w-75" alt="">
+                                    </div>
+                                    <div class="col-md-6 quote-section">
+                                        <h3 class="mb-5">Acompañamiento de calidad</h3>
+
+                                        <i class="fa fa-quote-left" id="ql"></i>
+                                        <p class="text-center m-0">Afortunadamente tenemos este servicio en CABA. Un día se me presentó la necesidad de contar con una oficina en esta ciudad; busqué en Internet, llamé y en 2 horas me dieron una cita. Por la tarde, ya tenía una oficina armada, magnífica ubicación, una línea telefónica exclusiva y un servicio profesional que atendería mis llamadas. Además, asesoría profesional contable. Excelente! Mil Gracias ITWorks!</p><i class="fa fa-quote-right float-right" id="qr"></i>
+
+                                        <h4 class="mt-5 text-right">Sofia T. Olazabal</h4>
+                                        <h6 class="text-right">Fundadora y CEO de weTecno</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-5 d-none d-md-flex justify-content-end">
+                                        <img src="assets/img/persona2.jpg" class="img-thumbnail w-75" alt="">
+                                    </div>
+                                    <div class="col-md-6 quote-section">
+                                        <h3 class="mb-5">Una empresa en la que se puede confiar</h3>
+
+                                        <i class="fa fa-quote-left" id="ql"></i>
+                                        <p class="text-center m-0">Nuestra compañia ha sido cliente de ITWorks por más de 2 años y la experiencia ha sido excelente. El personal siempre es cortés y profesional. Las llamadas y visitas por parte de nuestros clientes son tratadas de una manera amable y eficiente. Recomiendo altamente sus servicios.</p><i class="fa fa-quote-right float-right" id="qr"></i>
+
+                                        <h4 class="mt-5 text-right">Malik O'Connor</h4>
+                                        <h6 class="text-right">Ingeniero Senior en TecnoApp</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-5 d-none d-md-flex justify-content-end">
+                                        <img src="assets/img/persona3.jpg" class="img-thumbnail w-75" alt="">
+                                    </div>
+                                    <div class="col-md-6 quote-section">
+                                        <h3 class="mb-5">Incomparable</h3>
+
+                                        <i class="fa fa-quote-left" id="ql"></i>
+                                        <p class="text-center m-0">Somos una empresa de limpieza, y a lo largo del tiempo que hemos estado con los servicios de ITWorks, nuestra clientela ha ido en aumento y el servicio que nos han prestado nos ha permitido posicionar nuestra empresa con una excelente imagen ante nuestro clientes y proveedores.</p><i class="fa fa-quote-right float-right" id="qr"></i>
+
+                                        <h4 class="mt-5 text-right">Omar Pearson</h4>
+                                        <h6 class="text-right">Presidente de CleanService</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-5 d-none d-md-flex justify-content-end">
+                                        <img src="assets/img/persona4.jpg" class="img-thumbnail w-75" alt="">
+                                    </div>
+                                    <div class="col-md-6 quote-section">
+                                        <h3 class="mb-5">Maravilloso</h3>
+
+                                        <i class="fa fa-quote-left" id="ql"></i>
+                                        <p class="text-center m-0">Trabajar con ITWorks me ha dado la posibilidad y la seriedad necesaria para transmitir la confianza que mis clientes necesitan y darme a conocer a mas personas para seguir ofreciendo lo que me apasiona</p><i class="fa fa-quote-right float-right" id="qr"></i>
+
+                                        <h4 class="mt-5 text-right">Natali Watson</h4>
+                                        <h6 class="text-right">Programadora Freelancer</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <br><br><br><br>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    
+    <section id="contacto" class="my-5">
+        <h2 class="text-center mb-5 seccion__titulo--sombreado">Contactanos</h2>
+    
+        <div class="container">
+            <form class="bordeSombreado p-5">
+                <div class="form-row">
+                    <div class="form-group col-md-6 fuente">
+                        <label class="" for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                    </div>
+                    <div class="form-group col-md-6 fuente">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6 fuente">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+                    </div>
+                    <div class="form-group col-md-6 fuente">
+                        <label for="telefono">Telefono (Opcional)</label>
+                        <input type="number" class="form-control" id="telefono" placeholder="011 2222 3333">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6 fuente">
+                        <label for="consulta">Que area deseas consultar?</label>
+                        <select id="consulta" class="form-control">
+                            <option selected>Seleccionar</option>
+                            <option>eCommerce</option>
+                            <option>Educacion</option>
+                            <option>Servicios</option>
+                            <option>Venta en Local</option>
+                            <option>Gestorias</option>
+                            <option>Diseño</option>
+                            <option>Marketing</option>
+                            <option>Salud</option>
+                            <option>Software</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6 fuente">
+                        <label class="d-inline" for="novedades">Desea recibir noticias y ofertas semanales?</label>
+                        <input class="fuente" type="checkbox" id="novedades">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6 fuente">
+                        <label for="mensaje">Mensaje</label><br>
+                        <textarea id="mensaje" placeholder="Escribir..."></textarea>
+                    </div>
+                </div>
+                <!-- Boton LIMPIAR con Modal -->
+                <button type="reset" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenterLimpiar">
+                    Limpiar
+                </button>
+                <!-- Boton ENVIAR con Modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenterEnviar">
+                    Enviar
+                </button>
+            </form>
+        </div>
+    </section>
+
+
 
     <footer class="background--darkorchid text-white p-4">
         <div class="container">
             <div class="row">
-                <div class="col d-flex justify-content-center align-items-center">
-                    <p class="lead text-center">
+                <div class="col-sm-6 d-flex justify-content-center align-items-center">
+                    <p class="lead">
                         2020 - IT Works! &copy;
                         <span>Todos los derechos</span>
                     </p>
                 </div>
-                <div class="col">
-                    <h3 class="d-flex justify-content-center">Seguinos!</h3>
+                <div class="col-sm-6">
                     <div class="d-flex justify-content-center">
                         <div class="mx-3">
-                            <a href="#"><i class="fab fa-facebook text-white"></i></a>
+                            <a href="#" class="text-white text-decoration-none redes-size">Facebook</a>
                         </div>
                         <div class="mx-3">
-                            <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                            <a href="#" class="text-white text-decoration-none redes-size">Instagram<!-- <i class="fab fa-instagram text-white"></i> --></a>
                         </div>
                         <div class="mx-3">
-                            <a href="#"><i class="fab fa-twitter text-white"></i></a>
+                            <a href="#" class="text-white text-decoration-none redes-size">LinkedIn<!-- <i class="fab fa-twitter text-white"></i> --></a>
+                        </div>
+                        <div class="mx-3">
+                            <a href="#" class="text-white text-decoration-none redes-size">Twitter<!-- <i class="fab fa-twitter text-white"></i> --></a>
                         </div>
                     </div>
                 </div>
@@ -119,5 +445,6 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
