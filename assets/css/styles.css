@@ -139,6 +139,7 @@ body {
   font-family: 'Poiret One', 'Rajdhani';
   height: 100vh;
   margin: 0;
+  overflow-x: hidden;
   background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), linear-gradient(90deg, yellow, darkorchid); }
 
 h1 {
@@ -221,9 +222,7 @@ textarea {
 #seccion img:hover {
   transform: scale(1.04); }
 
-#seccion img:hover + span {
-  /* opacity: 1; */
-  /* transform: scale(1.04); */
+#seccion img:hover + span, #seccion span:hover {
   bottom: 50%;
   opacity: 1; }
 
@@ -260,6 +259,10 @@ textarea {
     justify-content: center !important; }
   .jumbotron {
     padding-top: 50%; } }
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .img-md {
+    width: 360px !important; } }
 
 @-webkit-keyframes text-flicker-in-glow {
   0% {
