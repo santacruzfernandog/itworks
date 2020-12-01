@@ -135,6 +135,9 @@
     font-size: 22px; } }
 
 /* Pagina 'Servicios' -------- fin */
+html {
+  overflow-x: hidden; }
+
 body {
   font-family: 'Poiret One', 'Rajdhani';
   height: 100vh;
@@ -261,8 +264,8 @@ textarea {
 
 @media (min-width: 769px) and (max-width: 992px) {
   .img-md {
-    width: 333px !important;
-    height: 445px !important; } }
+    width: 335px !important;
+    height: 400px !important; } }
 
 @-webkit-keyframes text-flicker-in-glow {
   0% {
