@@ -139,7 +139,6 @@ body {
   font-family: 'Poiret One', 'Rajdhani';
   height: 100vh;
   margin: 0;
-  overflow-x: hidden;
   background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), linear-gradient(90deg, yellow, darkorchid); }
 
 h1 {
@@ -262,7 +261,8 @@ textarea {
 
 @media (min-width: 769px) and (max-width: 992px) {
   .img-md {
-    width: 360px !important; } }
+    width: 333px !important;
+    height: 445px !important; } }
 
 @-webkit-keyframes text-flicker-in-glow {
   0% {
