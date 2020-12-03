@@ -149,6 +149,12 @@ textarea {
   font-size: 2em;
 }
 
+@media (max-width: 415px){
+  #twitter{
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   #seccion span{
     bottom: 50%;
